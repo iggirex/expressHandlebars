@@ -1,0 +1,20 @@
+<html>
+  <header>
+    <title>hello from handlebars</title>
+  </header>
+
+  <body>
+    {{#if cohortName}}
+    <h1> HI {{cohortName}}</h1>
+    {{else}}
+    <h1>I don't know what cohort you are</h1>
+    {{/if}}
+
+    <h1>My fav foods:</h1>
+
+    <ol>
+      {{#each foods}}
+        <li>{{this}}</li>
+        {{/each}}
+  </body>
+</html>
